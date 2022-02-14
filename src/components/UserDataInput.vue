@@ -9,7 +9,7 @@
             <input class='user-age' id='userage' type='text' v-model='age'/>
         </div>
         <div class="card-child-input">
-            <h3>Дети</h3>
+            <h3>Дети (макс.5)</h3>
             <UserChildren v-on:send='sendChild'/>
             <button class='save-btn' v-on:click='save'> Сохранить </button>
         </div>
