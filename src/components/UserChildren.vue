@@ -42,13 +42,9 @@
 
 <script>
 export default {
-    // props: {
-    //     children: Array
-    // },
     data() {
         return {
-            // name: null,
-            // age: null,
+            
             key: 0,
             childrenInputes: [
                 {seen: false, name: null, age: null},
@@ -191,8 +187,6 @@ width: 204px;
 height: 44px;
 left: 460px;
 top: 1px;
-
-/* Colors / Primary */
 
 border: 2px solid #01A7FD;
 box-sizing: border-box;

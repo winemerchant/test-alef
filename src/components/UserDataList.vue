@@ -5,35 +5,18 @@
             <UserDataInput v-on:save='saveData' />
             
         </div>
-        
-        
-        <!-- <div class="card">
-            <h2> Данные пользователя </h2>
-            <p> {{user.name}}, {{user.age}} </p>
-        </div> -->
-        <!-- <div class="card">
-            <h2> Дети </h2>
-            <ul>
-                <li v-for='child in children' v-bind:key='child.id'>
-                    {{child.name}}, {{child.age}}
-                </li>
-            </ul>
-        </div> -->
-        <!-- <UserListCreator v-bind:user='user' v-bind:children='children'/> -->
     </div>
 </template>
 
 <script>
 
 import UserDataInput from './UserDataInput.vue'
-// import UserListCreator from './UserListCreator.vue'
 
 export default {
     components: {
         UserDataInput,
-        // UserListCreator
     },
-    // props: ['importData'],
+
     data() {
         return {
             countid: 0,
@@ -66,7 +49,7 @@ export default {
                 'refresh', {user: this.user, children: this.children}
             )
             this.saveToLocalStorage()
-            // console.log(this.children[0]['name'])
+
 
         },
          saveToLocalStorage() {
@@ -75,7 +58,7 @@ export default {
             localStorage.setItem('user', parsed)
             localStorage.setItem('children', parsenChildren)
         },
-        clearLocaleStorage() { //очищает LocaleStorage и обновляет страницу
+        clearLocaleStorage() {
             localStorage.removeItem('user')
             localStorage.removeItem('children')
             location.reload()

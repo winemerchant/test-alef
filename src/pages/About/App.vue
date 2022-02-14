@@ -14,10 +14,6 @@
         <p id='copyright'>All rights reserved</p>
       </div>
     </div>
-    <!-- <UserListCreator/> -->
-    <!-- <UserDataList/> -->
-    
-    
   </div>
 </template>
 

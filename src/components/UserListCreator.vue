@@ -61,13 +61,12 @@ export default {
             localStorage.setItem('user', parsed)
             localStorage.setItem('children', parsenChildren)
         },
-        clearLocaleStorage() { //очищает LocaleStorage и обновляет страницу
+        clearLocaleStorage() {
             localStorage.removeItem('user')
             localStorage.removeItem('children')
             location.reload()
         }
     }
-    // props: ['user', 'children']
 }
 </script>
 
@@ -114,7 +113,6 @@ height: 44px;
 left: 0px;
 top: 44px;
 
-/* Colors / GrayL */
 
 background: #F1F1F1;
 border-radius: 5px;

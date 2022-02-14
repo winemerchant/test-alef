@@ -66,7 +66,7 @@ export default {
             localStorage.setItem('name', parsedName)
             localStorage.setItem('age', parsedAge)
         },
-        clearLocaleStorage() { //очищает LocaleStorage и обновляет страницу
+        clearLocaleStorage() { 
             localStorage.removeItem('name')
             localStorage.removeItem('age')
             location.reload()
